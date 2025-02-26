@@ -993,6 +993,7 @@
             data-resource-timing-sampling-rate="10"
         ></script>
         <link rel="stylesheet" href="css/review_button.css">
+        <link rel="stylesheet" href="css/custom.css">
     </head>
 
     <body
@@ -1765,9 +1766,7 @@
                                             <p>Whether you need pieces for a fancy fine dining spot or restaurant crockery in bulk for your chain, let me know. I'll help you find pieces that'll make your guests smile :)</p>
                                         </div>
                                         <div class="appear-delay-2">
-                                            <a href="https://api.whatsapp.com/send?phone=919082820610&text=Can%20you%20help%20me%20find%20crockery%20for%20my%20restaurant%3F" class="btn">
-                                                Get in touch
-                                            </a>
+                                            <button class="btn" id="getInTouch">Get in touch</button>
                                         </div>
                                     </div>
                                 </div>
@@ -1985,7 +1984,7 @@
                             <div class="theme-block"><h1>Customer Reviews</h1></div>
                         </div>
                     </div>
-                    <div class="reviewContainer">
+                    <div class="container">
                         <button id="reviewBtn">+<p>Add Review</p></button>
                         <div id="reviewFormContainer" class="review-form-container">
                             <form id="reviewForm">
@@ -1997,6 +1996,7 @@
                                     <span class="star" data-value="4">&#9733;</span>
                                     <span class="star" data-value="5">&#9733;</span>
                                 </div>
+                                <label for="name">Your Name:</label>
                                 <input type="text" id="name" name="name" placeholder="Name" required>
                                 <textarea id="review" name="review" placeholder="Review" required></textarea>
                                 <input type="text" id="designation" name="designation" placeholder="Designation" required>
@@ -2020,7 +2020,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>                    
+                    </div>
 
                     <div id="shopify-section-template--20868304306211__rich_text_KBnHjN" class="shopify-section index-section"><div class="text-center page-width page-width--narrow"></div></div>
                     <div id="shopify-section-template--20868304306211__rich_text_FWhrkU" class="shopify-section index-section">
@@ -2028,273 +2028,111 @@
                             <div class="theme-block"><h1>Our Clients</h1></div>
                         </div>
                     </div>
-                    <div id="shopify-section-template--20868304306211__text_columns_N3eWht" class="shopify-section index-section">
-                        <div class="page-width">
-                            <div class="grid grid--uniform grid--flush-bottom">
-                                <div class="grid__item medium-up--one-third text-center" data-aos="row-of-3">
-                                    <div style="margin: 0 auto; max-width: 650px;">
-                                        <div class="text-spacing svg-mask svg-mask--square" style="height: 0; padding-bottom: 100%;">
-                                            <img src="https://www.wareinnovations.com/cdn/shop/files/bayroute_mumbai_ware_innovations_restaurant_crockery.jpg?v=1736578913&width=1080" alt="Bayroute, All branches, Mumbai">
-                                        </div>
-                                    </div>
-
-                                    <h3>Bayroute, All branches, Mumbai</h3>
-
-                                    <div class="rte-setting text-spacing">
-                                        <p><em>Mediterranean Cuisine</em></p>
-                                    </div>
-                                </div>
-                                <div class="grid__item medium-up--one-third text-center" data-aos="row-of-3">
-                                    <div style="margin: 0 auto; max-width: 650px;">
-                                        <div class="text-spacing" style="height: 0; padding-bottom: 100%;">
-                                            <img src="https://www.wareinnovations.com/cdn/shop/files/amelia_mumbai_ware_innovations_restaurant_crockery.jpg?v=1736578912&width=1080" alt="Amelia's, Mumbai">
-                                        </div>
-                                    </div>
-
-                                    <h3>Amelia's, Mumbai</h3>
-
-                                    <div class="rte-setting text-spacing">
-                                        <p><em>Continental, Italian</em></p>
-                                    </div>
-                                </div>
-                                <div class="grid__item medium-up--one-third text-center" data-aos="row-of-3">
-                                    <div style="margin: 0 auto; max-width: 650px;">
-                                        <div class="text-spacing" style="height: 0; padding-bottom: 100%;">
-                                            <img src="https://www.wareinnovations.com/cdn/shop/files/bastian_ware_innovations_restaurant_crockery.jpg?v=1736578910&width=1080" alt="Bastian, All Branches">
-                                        </div>
-                                    </div>
-
-                                    <h3>Bastian, All Branches</h3>
-
-                                    <div class="rte-setting text-spacing">
-                                        <p><em>Seafood, continental</em></p>
-                                    </div>
-                                </div>
-                                <div class="grid__item medium-up--one-third text-center" data-aos="row-of-3">
-                                    <div style="margin: 0 auto; max-width: 650px;">
-                                        <div class="text-spacing" style="height: 0; padding-bottom: 100%;">
-                                            <img src="https://www.wareinnovations.com/cdn/shop/files/k_s_charcoal_surat_ware_innovations_restaurant_crockery.jpg?v=1736578908&width=1080" alt="K's Charcoal, Surat">
-                                        </div>
-                                    </div>
-
-                                    <h3>K's Charcoal, Surat</h3>
-
-                                    <div class="rte-setting text-spacing">
-                                        <p><em>Italian Cuisine</em></p>
-                                    </div>
-                                </div>
-                                <div class="grid__item medium-up--one-third text-center" data-aos="row-of-3">
-                                    <div style="margin: 0 auto; max-width: 650px;">
-                                        <div class="text-spacing svg-mask svg-mask--square" style="height: 0; padding-bottom: 100%;">
-                                            <img src="https://www.wareinnovations.com/cdn/shop/files/Nandan_coffee_house_ceramic_tableware_ware_innovation__restaurant_crockery.jpg?v=1736578912&width=1080" alt="Nandan Coffee House, Mumbai">
-                                        </div>
-                                    </div>
-
-                                    <h3>Nandan Coffee House, Mumbai</h3>
-
-                                    <div class="rte-setting text-spacing"><p>Coffeehouse</p></div>
-                                </div>
-                                <div class="grid__item medium-up--one-third text-center" data-aos="row-of-3">
-                                    <div style="margin: 0 auto; max-width: 650px;">
-                                        <div class="text-spacing" style="height: 0; padding-bottom: 100%;">
-                                            <img src="https://www.wareinnovations.com/cdn/shop/files/papa_s_bombay_ceramic_tableware_ware_innovation.jpg?v=1736587454&width=1080" alt="Papa's Bombay, Mumbai">
-                                        </div>
-                                    </div>
-
-                                    <h3>Papa's Bombay, Mumbai</h3>
-
-                                    <div class="rte-setting text-spacing"><p>Modern Indian</p></div>
-                                </div>
-                                <div class="grid__item medium-up--one-third text-center" data-aos="row-of-3">
-                                    <div style="margin: 0 auto; max-width: 650px;">
-                                        <div class="text-spacing" style="height: 0; padding-bottom: 100%;">
-                                            <img src="https://www.wareinnovations.com/cdn/shop/files/craft_of_food_2.0_ceramic_tableware_ware_innovation.jpg?v=1736587324&width=1080" alt="Craft of Food 2.0, Mumbai">
-                                        </div>
-                                    </div>
-
-                                    <h3>Craft of Food 2.0, Mumbai</h3>
-
-                                    <div class="rte-setting text-spacing">
-                                        <p><em>Fast Food, Pizzas</em></p>
-                                    </div>
-                                </div>
-                                <div class="grid__item medium-up--one-third text-center" data-aos="row-of-3">
-                                    <div style="margin: 0 auto; max-width: 650px;">
-                                        <div class="text-spacing" style="height: 0; padding-bottom: 100%;">
-                                            <img src="https://www.wareinnovations.com/cdn/shop/files/maffei_artisan_kitchen_bengaluru_ware_innovations__restaurant_crockery.jpg?v=1736578912&width=1080" alt="Maffei Fine Artizan Kitchen, Bengaluru">
-                                        </div>
-                                    </div>
-
-                                    <h3>Maffei Fine Artizan Kitchen, Bengaluru</h3>
-
-                                    <div class="rte-setting text-spacing">
-                                        <p><em>Lebanese Restaurant</em></p>
-                                    </div>
-                                </div>
-                                <div class="grid__item medium-up--one-third text-center" data-aos="row-of-3">
-                                    <div style="margin: 0 auto; max-width: 650px;">
-                                        <div class="text-spacing" style="height: 0; padding-bottom: 100%;">
-                                            <img src="https://www.wareinnovations.com/cdn/shop/files/Dee_beans_cafe_surat_ceramic_tableware_ware_innovations_restaurant_crockery.jpg?v=1736578911&width=1080" alt="Dee Beans Cafe, Surat">
-                                        </div>
-                                    </div>
-
-                                    <h3>Dee Beans Cafe, Surat</h3>
-
-                                    <div class="rte-setting text-spacing"><p>Coffee & Food</p></div>
-                                </div>
-                                <div class="grid__item medium-up--one-third text-center" data-aos="row-of-3">
-                                    <div style="margin: 0 auto; max-width: 650px;">
-                                        <div class="text-spacing" style="height: 0; padding-bottom: 100%;">
-                                            <img src="https://www.wareinnovations.com/cdn/shop/files/beanlore_cafe_bengaluru_ware_innovations_restaurant_crockery.jpg?v=1736578908&width=1080" alt="Beanlore Coffee Roasters, Bengaluru">
-                                        </div>
-                                    </div>
-
-                                    <h3>Beanlore Coffee Roasters, Bengaluru</h3>
-
-                                    <div class="rte-setting text-spacing">
-                                        <p><em>Café</em></p>
-                                    </div>
-                                </div>
-                                <div class="grid__item medium-up--one-third text-center" data-aos="row-of-3">
-                                    <div style="margin: 0 auto; max-width: 650px;">
-                                        <div class="  text-spacing" style="height: 0; padding-bottom: 100%;">
-                                            <img src="https://www.wareinnovations.com/cdn/shop/files/dome_pizzeria_surat_ware_innovations_restaurant_crockery.jpg?v=1736578909&width=1080" alt="Dome Pizzeria, Surat">
-                                        </div>
-                                    </div>
-
-                                    <h3>Dome Pizzeria, Surat</h3>
-
-                                    <div class="rte-setting text-spacing">
-                                        <p><em>Italian Cuisine</em></p>
-                                    </div>
-                                </div>
-                                <div class="grid__item medium-up--one-third text-center" data-aos="row-of-3">
-                                    <div style="margin: 0 auto; max-width: 650px;">
-                                        <div class="  text-spacing" style="height: 0; padding-bottom: 100%;">
-                                            <img src="https://www.wareinnovations.com/cdn/shop/files/la_croute_delhi_ware_innovations__restaurant_crockery.jpg?v=1736578911&width=1080" alt="La Croute, New Delhi">
-                                        </div>
-                                    </div>
-
-                                    <h3>La Croute, New Delhi</h3>
-
-                                    <div class="rte-setting text-spacing">
-                                        <p><em>Bakery, Desserts</em></p>
-                                    </div>
-                                </div>
-                                <div class="grid__item medium-up--one-third text-center" data-aos="row-of-3">
-                                    <div style="margin: 0 auto; max-width: 650px;">
-                                        <div class="  text-spacing" style="height: 0; padding-bottom: 100%;">
-                                            <img src="https://www.wareinnovations.com/cdn/shop/files/Toast_pasta_bar_mumbai_ware_innovations__restaurant_crockery.jpg?v=1736578909&width=720" alt="Toast Pasta Bar, Mumbai">
-                                        </div>
-                                    </div>
-
-                                    <h3>Toast Pasta Bar, Mumbai</h3>
-
-                                    <div class="rte-setting text-spacing"><p>Italian Cuisine</p></div>
-                                </div>
-                                <div class="grid__item medium-up--one-third text-center" data-aos="row-of-3">
-                                    <div style="margin: 0 auto; max-width: 650px;">
-                                        <div class="  text-spacing svg-mask svg-mask--square" style="height: 0; padding-bottom: 100%;">
-                                            <img src="https://www.wareinnovations.com/cdn/shop/files/port_cafe_mumbai_ware_innovations__restaurant_crockery.jpg?v=1736578911&width=720" alt="Port Café, Mumbai">
-                                        </div>
-                                    </div>
-
-                                    <h3>Port Café, Mumbai</h3>
-
-                                    <div class="rte-setting text-spacing">
-                                        <p><em>Café & Italian Cuisine</em></p>
-                                    </div>
-                                </div>
-                                <div class="grid__item medium-up--one-third text-center" data-aos="row-of-3">
-                                    <div style="margin: 0 auto; max-width: 650px;">
-                                        <div class="  text-spacing" style="height: 0; padding-bottom: 100%;">
-                                            <img src="https://www.wareinnovations.com/cdn/shop/files/Bleu_9_patisserie_Ahemdabad_ware_innovations_restaurant_crockery.jpg?v=1736578908&width=720" alt="Bleu 9, Ahemdabad">
-                                        </div>
-                                    </div>
-
-                                    <h3>Bleu 9, Ahemdabad</h3>
-
-                                    <div class="rte-setting text-spacing">
-                                        <p><em>Patisserie</em></p>
-                                    </div>
-                                </div>
-                                <div class="grid__item medium-up--one-third text-center" data-aos="row-of-3">
-                                    <div style="margin: 0 auto; max-width: 650px;">
-                                        <div class="  text-spacing" style="height: 0; padding-bottom: 100%;">
-                                            <img src="https://www.wareinnovations.com/cdn/shop/files/pizza___frends_surat_ware_innovations__restaurant_crockery.jpg?v=1736578908&width=720" alt="Pizza & Frnds, Surat">
-                                        </div>
-                                    </div>
-
-                                    <h3>Pizza & Frnds, Surat</h3>
-
-                                    <div class="rte-setting text-spacing">
-                                        <p><em>Italian</em></p>
-                                    </div>
-                                </div>
-                                <div class="grid__item medium-up--one-third text-center" data-aos="row-of-3">
-                                    <div style="margin: 0 auto; max-width: 650px;">
-                                        <div class="  text-spacing" style="height: 0; padding-bottom: 100%;">
-                                            <img src="https://www.wareinnovations.com/cdn/shop/files/deck_88_goa_ware_innovations_restaurant_crockery.jpg?v=1736578912&width=720" alt="Deck 88, Astor Goa">
-                                        </div>
-                                    </div>
-
-                                    <h3>Deck 88, Astor Goa</h3>
-
-                                    <div class="rte-setting text-spacing">
-                                        <p><em>Continental</em></p>
-                                    </div>
-                                </div>
-                                <div class="grid__item medium-up--one-third text-center" data-aos="row-of-3">
-                                    <div style="margin: 0 auto; max-width: 650px;">
-                                        <div class="  text-spacing svg-mask svg-mask--square" style="height: 0; padding-bottom: 100%;">
-                                            <img src="https://www.wareinnovations.com/cdn/shop/files/Neru_french_bake_house_ceramic_tableware_ware_innovations__restaurant_crockery.jpg?v=1736578912&width=720" alt="Neru French Bake House, Bengaluru">
-                                        </div>
-                                    </div>
-
-                                    <h3>Neru French Bake House, Bengaluru</h3>
-
-                                    <div class="rte-setting text-spacing"><p>Bakehouse</p></div>
-                                </div>
-                                <div class="grid__item medium-up--one-third text-center" data-aos="row-of-3">
-                                    <div style="margin: 0 auto; max-width: 650px;">
-                                        <div class="  text-spacing" style="height: 0; padding-bottom: 100%;">
-                                            <img src="https://www.wareinnovations.com/cdn/shop/files/club_jolies_mumbai_ware_innovations_restaurant_crockery.jpg?v=1736578911&width=1080" alt="Club Jolies, Mumbai">
-                                        </div>
-                                    </div>
-
-                                    <h3>Club Jolies, Mumbai</h3>
-
-                                    <div class="rte-setting text-spacing">
-                                        <p><em>European Cuisine</em></p>
-                                    </div>
-                                </div>
-                                <div class="grid__item medium-up--one-third text-center" data-aos="row-of-3">
-                                    <div style="margin: 0 auto; max-width: 650px;">
-                                        <div class="  text-spacing" style="height: 0; padding-bottom: 100%;">
-                                            <img src="https://www.wareinnovations.com/cdn/shop/files/sequeal_mumbai_ware_innovations__restaurant_crockery.jpg?v=1736578911&width=1080" alt="Sequel, Mumbai">
-                                        </div>
-                                    </div>
-
-                                    <h3>Sequel, Mumbai</h3>
-
-                                    <div class="rte-setting text-spacing">
-                                        <p><em>Organic Cuisine</em></p>
-                                    </div>
-                                </div>
-                                <div class="grid__item medium-up--one-third text-center" data-aos="row-of-3">
-                                    <div style="margin: 0 auto; max-width: 650px;">
-                                        <div class="  text-spacing" style="height: 0; padding-bottom: 100%;">
-                                            <img src="https://www.wareinnovations.com/cdn/shop/files/soy_street_surat_ware_innovations.jpg?v=1736578912&width=1080" alt="Soy Street, Surat">
-                                        </div>
-                                    </div>
-
-                                    <h3>Soy Street, Surat</h3>
-
-                                    <div class="rte-setting text-spacing">
-                                        <p><em>Asian-inspired</em></p>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="carousel">
+                        <div class="carousel-item">
+                            <img src="https://www.wareinnovations.com/cdn/shop/files/bayroute_mumbai_ware_innovations_restaurant_crockery.jpg?v=1736578913&width=1080" alt="Bayroute, All branches, Mumbai">
+                            <h3>Bayroute, All branches, Mumbai</h3>
+                            <p><em>Mediterranean Cuisine</em></p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.wareinnovations.com/cdn/shop/files/amelia_mumbai_ware_innovations_restaurant_crockery.jpg?v=1736578912&width=1080" alt="Amelia's, Mumbai">
+                            <h3>Amelia's, Mumbai</h3>
+                            <p><em>Continental, Italian</em></p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.wareinnovations.com/cdn/shop/files/bastian_ware_innovations_restaurant_crockery.jpg?v=1736578910&width=1080" alt="Bastian, All Branches">
+                            <h3>Bastian, All Branches</h3>
+                            <p><em>Seafood, continental</em></p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.wareinnovations.com/cdn/shop/files/k_s_charcoal_surat_ware_innovations_restaurant_crockery.jpg?v=1736578908&width=1080" alt="K's Charcoal, Surat">
+                            <h3>K's Charcoal, Surat</h3>
+                            <p><em>Italian Cuisine</em></p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.wareinnovations.com/cdn/shop/files/Nandan_coffee_house_ceramic_tableware_ware_innovation__restaurant_crockery.jpg?v=1736578912&width=1080" alt="Nandan Coffee House, Mumbai">
+                            <h3>Nandan Coffee House, Mumbai</h3>
+                            <p><em>Coffeehouse</em></p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.wareinnovations.com/cdn/shop/files/papa_s_bombay_ceramic_tableware_ware_innovation.jpg?v=1736587454&width=1080" alt="Papa's Bombay, Mumbai">
+                            <h3>Papa's Bombay, Mumbai</h3>
+                            <p><em>Modern Indian</em></p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.wareinnovations.com/cdn/shop/files/craft_of_food_2.0_ceramic_tableware_ware_innovation.jpg?v=1736587324&width=1080" alt="Craft of Food 2.0, Mumbai">
+                            <h3>Craft of Food 2.0, Mumbai</h3>
+                            <p><em>Fast Food, Pizzas</em></p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.wareinnovations.com/cdn/shop/files/maffei_artisan_kitchen_bengaluru_ware_innovations__restaurant_crockery.jpg?v=1736578912&width=1080" alt="Maffei Fine Artizan Kitchen, Bengaluru">
+                            <h3>Maffei Fine Artizan Kitchen, Bengaluru</h3>
+                            <p><em>Lebanese Restaurant</em></p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.wareinnovations.com/cdn/shop/files/Dee_beans_cafe_surat_ceramic_tableware_ware_innovations_restaurant_crockery.jpg?v=1736578911&width=1080" alt="Dee Beans Cafe, Surat">
+                            <h3>Dee Beans Cafe, Surat</h3>
+                            <p><em>Coffee & Food</em></p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.wareinnovations.com/cdn/shop/files/beanlore_cafe_bengaluru_ware_innovations_restaurant_crockery.jpg?v=1736578908&width=1080" alt="Beanlore Coffee Roasters, Bengaluru">
+                            <h3>Beanlore Coffee Roasters, Bengaluru</h3>
+                            <p><em>Cafe</em></p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.wareinnovations.com/cdn/shop/files/dome_pizzeria_surat_ware_innovations_restaurant_crockery.jpg?v=1736578909&width=1080" alt="Dome Pizzeria, Surat">
+                            <h3>Dome Pizzeria, Surat</h3>
+                            <p><em>Italian Cuisine</em></p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.wareinnovations.com/cdn/shop/files/la_croute_delhi_ware_innovations__restaurant_crockery.jpg?v=1736578911&width=1080" alt="La Croute, New Delhi">
+                            <h3>La Croute, New Delhi</h3>
+                            <p><em>Bakery, Desserts</em></p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.wareinnovations.com/cdn/shop/files/Toast_pasta_bar_mumbai_ware_innovations__restaurant_crockery.jpg?v=1736578909&width=720" alt="Toast Pasta Bar, Mumbai">
+                            <h3>Toast Pasta Bar, Mumbai</h3>
+                            <p><em>Italian Cuisine</em></p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.wareinnovations.com/cdn/shop/files/port_cafe_mumbai_ware_innovations__restaurant_crockery.jpg?v=1736578911&width=720" alt="Port Café, Mumbai">
+                            <h3>Port Café, Mumbai</h3>
+                            <p><em>Café & Italian Cuisine</em></p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.wareinnovations.com/cdn/shop/files/Bleu_9_patisserie_Ahemdabad_ware_innovations_restaurant_crockery.jpg?v=1736578908&width=720" alt="Bleu 9, Ahemdabad">
+                            <h3>Bleu 9, Ahemdabad</h3>
+                            <p><em>Patisserie</em></p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.wareinnovations.com/cdn/shop/files/pizza___frends_surat_ware_innovations__restaurant_crockery.jpg?v=1736578908&width=720" alt="Pizza & Frnds, Surat">
+                            <h3>Pizza & Frnds, Surat</h3>
+                            <p><em>Italian</em></p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.wareinnovations.com/cdn/shop/files/deck_88_goa_ware_innovations_restaurant_crockery.jpg?v=1736578912&width=720" alt="Deck 88, Astor Goa">
+                            <h3>Deck 88, Astor Goa</h3>
+                            <p><em>Continental</em></p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.wareinnovations.com/cdn/shop/files/Neru_french_bake_house_ceramic_tableware_ware_innovations__restaurant_crockery.jpg?v=1736578912&width=720" alt="Neru French Bake House, Bengaluru">
+                            <h3>Neru French Bake House, Bengaluru</h3>
+                            <p><em>Bakehouse</em></p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.wareinnovations.com/cdn/shop/files/club_jolies_mumbai_ware_innovations_restaurant_crockery.jpg?v=1736578911&width=1080" alt="Club Jolies, Mumbai">
+                            <h3>Club Jolies, Mumbai</h3>
+                            <p><em>European Cuisine</em></p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.wareinnovations.com/cdn/shop/files/sequeal_mumbai_ware_innovations__restaurant_crockery.jpg?v=1736578911&width=1080" alt="Sequel, Mumbai">
+                            <h3>Sequel, Mumbai</h3>
+                            <p><em>Organic Cuisine</em></p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.wareinnovations.com/cdn/shop/files/soy_street_surat_ware_innovations.jpg?v=1736578912&width=1080" alt="Soy Street, Surat">
+                            <h3>Soy Street, Surat</h3>
+                            <p><em>Asian-inspired</em></p>
                         </div>
                     </div>
                     <div id="shopify-section-template--20868304306211__slideshow_rbiQVk" class="shopify-section index-section--hero">
@@ -2398,7 +2236,7 @@
                     </div>
                     <div id="shopify-section-template--20868304306211__rich_text_fznVyT" class="shopify-section index-section"><div class="text-center page-width page-width--narrow"></div></div>
                     <div id="shopify-section-template--20868304306211__contact_form_NEKEMV" class="shopify-section index-section">
-                        <div class="index-section">
+                        <div class="index-section" id="get_in_touch">
                             <div class="page-width page-width--narrow">
                                 <div class="section-header">
                                     <h2 class="section-header__title">
@@ -2412,22 +2250,35 @@
 
                                         <div class="grid grid--small">
                                             <div class="grid__item medium-up--one-half">
-                                                <label for="ContactFormName-template--20868304306211__contact_form_NEKEMV">Name</label>
-                                                <input type="text" id="ContactFormName-template--20868304306211__contact_form_NEKEMV" class="input-full" name="contact[name]" autocapitalize="words" value="" />
+                                                <input type="text" id="ContactFormName-template--20868304306211__contact_form_NEKEMV" class="input-full" name="contact[fname]" autocapitalize="words" value="" placeholder="First Name" />
+                                            </div>
+                                            <div class="grid__item medium-up--one-half">
+                                                <input type="text" id="ContactFormName-template--20868304306211__contact_form_NEKEMV" class="input-full" name="contact[lname]" autocapitalize="words" value="" placeholder="Last Name" />
                                             </div>
 
-                                            <div class="grid__item medium-up--one-half">
-                                                <label for="ContactFormEmail-template--20868304306211__contact_form_NEKEMV">Email</label>
-                                                <input type="email" id="ContactFormEmail-template--20868304306211__contact_form_NEKEMV" class="input-full" name="contact[email]" autocorrect="off" autocapitalize="off" value="" />
+                                            <div class="grid__item">
+                                                <input
+                                                    type="email"
+                                                    id="ContactFormEmail-template--20868304306211__contact_form_NEKEMV"
+                                                    class="input-full"
+                                                    name="contact[email]"
+                                                    autocorrect="off"
+                                                    autocapitalize="off"
+                                                    value=""
+                                                    placeholder="Email"
+                                                />
                                             </div>
                                         </div>
-                                        <label for="ContactFormPhone-template--20868304306211__contact_form_NEKEMV">Phone number</label>
-                                        <input type="tel" id="ContactFormPhone-template--20868304306211__contact_form_NEKEMV" class="input-full" name="contact[phone]" pattern="[0-9\-]*" value="" />
+                                        <input type="tel" id="ContactFormPhone-template--20868304306211__contact_form_NEKEMV" class="input-full" name="contact[phone]" pattern="[0-9\-]*" value="" placeholder="Phone" />
+                                        <input class="input-full" name="contact[restaurant_or_company_name]" pattern="[0-9\-]*" value="" placeholder="Restaurant/ company name" />
                                         <label for="contact-form-submit-template--20868304306211__contact_form_NEKEMV" class="hidden-label">Send</label>
                                         <button type="submit" id="contact-form-submit-template--20868304306211__contact_form_NEKEMV" class="btn">
                                             Send
                                         </button>
                                     </form>
+                                </div>
+                                <div id="thank-you-message" style="display: none;">
+                                    <h2>Thank you for reaching out, <span id="user-name"></span>!</h2>
                                 </div>
                             </div>
                         </div>
@@ -5946,6 +5797,34 @@
             </script>
         </div>
         <!-- Failed to render app block "16510219240223340300": app block path "shopify://apps/whatmore-shoppable-videos/blocks/app-embed/20db8a72-315a-4364-8885-64219ee48303" does not exist -->
+        <!-- For Test 1 A -->
+        <script src="js/get_in_touch.js"></script>
+        <!-- For Test 1 B -->
         <script src="js/review_button.js"></script>
+        <!-- For Test 1 C -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.carousel').slick({
+                    infinite: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 700,
+                    arrows: true,
+                    dots: true,
+                    responsive: [
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1
+                            }
+                        }
+                    ]
+                });
+            });
+        </script>
     </body>
 </html>

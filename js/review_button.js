@@ -12,8 +12,26 @@ reviewBtn.onclick = function() {
 
 const stars = document.querySelectorAll(".star");
 let selectedRating = 0;
-
 stars.forEach(star => {
+    star.addEventListener('mouseenter', () => {
+        const value = star.getAttribute('data-value');
+        stars.forEach(s => {
+            if (s.getAttribute('data-value') <= value) {
+                s.style.color = '#f7d26b';
+            } else {
+                s.style.color = '#bf5e35';
+            }
+        });
+    });
+
+    star.addEventListener('mouseleave', () => {
+        stars.forEach(s => {
+            if (!s.classList.contains('selected')) {
+                s.style.color = '#bf5e35';
+            }
+        });
+    });
+
     star.onclick = function() {
         selectedRating = this.getAttribute("data-value");
         updateStars(selectedRating);
@@ -24,8 +42,10 @@ function updateStars(rating) {
     stars.forEach(star => {
         if (star.getAttribute("data-value") <= rating) {
             star.classList.add("selected");
+            star.style.color = "#f7d26b";
         } else {
             star.classList.remove("selected");
+            star.style.color = "#bf5e35";
         }
     });
 }

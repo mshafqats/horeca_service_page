@@ -1,10 +1,6 @@
-.container {
+.reviewContainer{
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    flex-wrap: wrap;
 }
-
 /* Review Button */
 #reviewBtn {
     color: #bf5e35;
@@ -13,7 +9,7 @@
     border: none;
     cursor: pointer;
     width: auto;
-    margin-bottom: 0;
+    margin-bottom: 20px; /* Adds space between the button and the form */
 }
 
 #reviewBtn p {
@@ -41,7 +37,7 @@
 /* Reviews Section */
 .reviews-section {
     width: 60%;
-    margin-left: 20px;
+    margin-top: 20px;
 }
 
 #reviewList {
@@ -57,6 +53,7 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 300px;
+    margin: 30px
 }
 
 .review-box .rating {
@@ -66,11 +63,23 @@
 }
 
 .review-box .star {
-    font-size: 20px;
+    font-size: 40px; /* Increased the star size */
     color: #bf5e35;
     margin-right: 5px;
+    cursor: pointer; /* Makes the stars clickable */
 }
 
+/* Hover effect on stars */
+.review-box .star:hover {
+    color: #f7d26b; /* Change to a yellow color on hover */
+}
+
+/* Active state (when a star is clicked, for example) */
+.review-box .star.active {
+    color: #f7d26b; /* Highlight active stars with yellow */
+}
+
+/* Review Box Text */
 .review-box p {
     font-size: 16px;
 }
@@ -83,8 +92,7 @@
 
 /* Media Queries for responsiveness */
 @media screen and (max-width: 768px) {
-    .container {
-        flex-direction: column;
+    .reviewContainer {
         align-items: center;
     }
 
@@ -128,6 +136,6 @@
     }
 
     .star {
-        font-size: 18px;
+        font-size: 30px; /* Decrease star size slightly for smaller screens */
     }
 }
