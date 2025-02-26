@@ -1,6 +1,6 @@
 # Horeca Service Page
-Hello and welcome!
 
+Hello and welcome!
 My name is <a href="https://www.linkedin.com/in/mohammad-shafqat-siddiqui/" target="_blank">Mohammad Shafqat Siddiqui</a>, and I am pleased to present this project that I completed independently. I took on this challenge without prior experience with the Shopify platform and completed all tasks on my own, dedicating my full effort to solve the given challenges.
 
 Please note that while I wasn't able to implement the functionality to save data on Shopify's backend with the tag <Horeca>, this was due to my limited familiarity with the platform. I chose not to rely on any AI tools during this project, as I wanted to ensure the work is entirely my own.

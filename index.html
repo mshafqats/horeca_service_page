@@ -3,51 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Challenge Assignment</title>
+  <title>Challenge Assignment - Horeca Service Page</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+    .header-section {
+      background-color: #f8f9fa;
+      padding: 40px 0;
+    }
+    .footer {
+      background-color: #343a40;
+      color: white;
+      padding: 20px 0;
+    }
+    .footer a {
+      color: #ffc107;
+    }
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-top: 30px;
+    }
+    .content-section {
+      background-color: #fff;
+      padding: 40px;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .content-section a {
+      color: #007bff;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-    <h2>Hi there</h2>
-    <h1>My name is Mohammad Shafqat Siddiqui</h1>
-    <table class="table table-hover">
-      <thead>
-        <tr>
-          <th scope="col"></th>
-          <th scope="col"></th>
-          <th scope="col">What to do</th>
-          <th scope="col">Solution</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Test 1 A</td>
-          <td>Create a contact form that is accessible using one button instead of opening a new page. It should scroll down to the end of the page where the contact form is</td>
-          <td><a href="test1a.html" target="_blank">Solution Link</a></td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Test 1 B</td>
-          <td>Add a Review block here for customers so that they can see & add reviews (above our clients)</td>
-          <td><a href="test1b.html" target="_blank">Solution Link</a></td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Test 1 C</td>
-          <td>Make the client image scrolling list into a sliding carousel</td>
-          <td><a href="test1c.html" target="_blank">Solution Link</a></td>
-        </tr>
-      </tbody>
-    </table>
+    <header class="header-section text-center">
+      <h1 class="display-4">Horeca Service Page</h1>
+      <p class="lead">Challenge Assignment by <a href="https://www.linkedin.com/in/mohammad-shafqat-siddiqui/" target="_blank"><strong>Mohammad Shafqat Siddiqui</strong></a></p>
+      <p class="text-muted">A self-completed project showcasing my front-end development skills without prior experience in Shopify.</p>
+    </header>
+
+    <div class="content-section">
+      <p>Hello! My name is <strong>Mohammad Shafqat Siddiqui</strong>, and I took on this front-end challenge independently. Despite not having previous experience with Shopify, I gave my best to solve all aspects of the assignment, without relying on any AI tools. Below, you can find the details of the tasks I completed:</p>
+
+      <h2 class="section-title">Task Breakdown</h2>
+      
+      <h4 class="section-title">Test 1a - Contact Form & Auto Scroll</h4>
+      <p>I implemented a contact form accessible via a button that scrolls smoothly to the form section.</p>
+      <ul>
+        <li>Copied the `theme.css` to my local machine and linked it to the HTML files.</li>
+        <li>Added an ID `getInTouch` for smooth scrolling functionality on line 1767 of `test1a.html`.</li>
+        <li>Created the `get_in_touch` ID for the auto-scroll feature on line 2780 of the same file.</li>
+        <li>Developed a JavaScript file `get_in_touch.js` to implement the scrolling effect.</li>
+        <li>Solution Link: <a href="test1a.html" target="_blank">View Solution</a></li>
+      </ul>
+
+      <h4 class="section-title">Test 1b - Customer Reviews Section</h4>
+      <p>I created a section for customer reviews and added a feature to submit new reviews.</p>
+      <ul>
+        <li>Added a "Customer Reviews" block starting from line 1983 in `test1b.html`.</li>
+        <li>Included an "Add Review" button to allow users to submit their reviews.</li>
+        <li>Added a few static reviews for demonstration purposes.</li>
+        <li>Solution Link: <a href="test1b.html" target="_blank">View Solution</a></li>
+      </ul>
+
+      <h4 class="section-title">Test 1c - Image Carousel</h4>
+      <p>Implemented an image carousel to display client images in a sliding format.</p>
+      <ul>
+        <li>Gathered all required images and ensured proper links were available.</li>
+        <li>Created custom styling in `custom.css`, imported on line 995 in the HTML.</li>
+        <li>Implemented the carousel between lines 1893 to 1999 and added JavaScript functionality for it between lines 5662 and 5685.</li>
+        <li>Solution Link: <a href="test1c.html" target="_blank">View Solution</a></li>
+      </ul>
+      
+      <h2 class="section-title">View the Code on GitHub</h2>
+      <p>To view the source code for the Horeca Service Page, please click the link below:</p>
+      <button type="button" class="btn btn-outline-primary" onclick="window.open('https://github.com/mshafqats/horeca_service_page', '_blank')">View Code on GitHub</button>
+    </div>
   </div>
 
-  <footer id="contact" class="bg-dark text-white text-center py-4">
+  <footer class="footer text-center">
     <div class="container">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename"><u>MShafqatS</u></strong> <span>All Rights Reserved</span></p>
-      Designed by <a href="index.html">Mohammad Shafqat Siddiqui</a>
+      <p>© <span>Copyright</span> <strong><u>MShafqatS</u></strong> All Rights Reserved.</p>
+      <p>Designed by <a href="https://www.linkedin.com/in/mohammad-shafqat-siddiqui/">Mohammad Shafqat Siddiqui</a></p>
     </div>
   </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>

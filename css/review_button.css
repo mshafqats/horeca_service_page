@@ -1,16 +1,24 @@
 .container {
-    display: ruby;
+    display: flex;
     justify-content: space-between;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
+/* Review Button */
 #reviewBtn {
-    /* background-color: #bf5e35; */
     color: #bf5e35;
     padding: 14px 20px;
     font-size: 25px;
     border: none;
     cursor: pointer;
+    width: auto;
+    margin-bottom: 0;
+}
+
+#reviewBtn p {
+    display: inline;
+    margin-left: 10px;
 }
 
 #reviewBtn:hover {
@@ -30,67 +38,16 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Review Section (Right side) */
+/* Reviews Section */
 .reviews-section {
-    width: 35%;
+    width: 60%;
     margin-left: 20px;
 }
 
 #reviewList {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.review-item {
-    padding: 15px;
-    background-color: #f1f1f1;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.review-item h4 {
-    margin: 0;
-    font-size: 16px;
-}
-
-.review-item p {
-    margin: 5px 0;
-    font-size: 14px;
-}
-
-/* Star Rating */
-#rating {
-    display: flex;
-    justify-content: space-between;
-    width: 100px;
-}
-
-.star {
-    font-size: 30px;
-    color: gray;
-    cursor: pointer;
-}
-
-.star.selected {
-    color: gold;
-}
-
-/* Form Styling */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-input, textarea {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-}
-
-textarea {
-    resize: vertical;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .review-box {
@@ -98,8 +55,8 @@ textarea {
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    margin: 10px auto;
+    width: 100%;
+    max-width: 300px;
 }
 
 .review-box .rating {
@@ -120,11 +77,11 @@ textarea {
 
 .review-box h4 {
     margin: 0;
-    font-size: 10px;
+    font-size: 14px;
     color: #333;
 }
 
-/* Responsive Design for Mobile (Android) */
+/* Media Queries for responsiveness */
 @media screen and (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -134,53 +91,43 @@ textarea {
     .review-form-container {
         width: 90%;
         max-width: none;
+        margin-top: 20px;
     }
 
     .reviews-section {
         width: 90%;
         margin-left: 0;
-        padding-left: 0;
-        margin-top: 20px;
     }
 
     #reviewBtn {
         width: 100%;
-        font-size: 20px;
-        margin-bottom: 10px;
     }
 
-    .review-item {
-        padding: 10px;
+    #reviewList {
+        flex-direction: column;
+        gap: 10px;
     }
 
-    .review-item h4 {
-        font-size: 14px;
-    }
-
-    .review-item p {
-        font-size: 12px;
-    }
-
-    .star {
-        font-size: 24px;
+    .review-box {
+        width: 100%;
+        max-width: none;
     }
 }
 
 @media screen and (max-width: 480px) {
     .review-box {
         padding: 15px;
-        width: 100%;
     }
 
-    .review-item {
-        padding: 8px;
-    }
-
-    .review-item h4 {
+    .review-box h4 {
         font-size: 12px;
     }
 
-    .review-item p {
-        font-size: 10px;
+    .review-box p {
+        font-size: 14px;
+    }
+
+    .star {
+        font-size: 18px;
     }
 }
